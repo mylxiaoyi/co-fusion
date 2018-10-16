@@ -3,12 +3,12 @@ cmake_minimum_required(VERSION 3.1.0)
 # Warnings / Errors
 add_compile_options(-std=c++14 -Wall -Wno-unused-function -Wno-unused-variable
   -Wno-unused-but-set-variable -Wno-unused-but-set-variable -Wno-write-strings
-  -Wno-deprecated -Wno-deprecated-declarations -Werror -Wno-unknown-pragmas)
+  -Wno-deprecated -Wno-deprecated-declarations -Wno-unknown-pragmas)
 
 # Don't follow symlinks when FILE GLOB_RECURSE (and don't warn)
 cmake_policy(SET CMP0009 NEW)
 
-set(CUDA_HOST_COMPILER "/usr/bin/g++-4.9")
+#set(CUDA_HOST_COMPILER "/usr/bin/g++-4.9")
 set(BUILD_TESTS OFF CACHE BOOL "Build unit tests")
 
 # OpenMP
